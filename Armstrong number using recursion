@@ -1,0 +1,17 @@
+#include<stdio.h>
+int armstrong(int n){
+	int rem,sum=0,org=n;
+	while(n!=0){
+		rem=n%10;
+		sum+=rem*rem*rem;
+		n/=10;
+	}
+	if(sum==org){
+		printf("Armstrong number");
+	} else{
+		printf("Not armstrong number");
+	}
+}
+int main(){
+	int arm = armstrong(153);
+}
